@@ -1,0 +1,51 @@
+{
+  "name": "@wiajs/dom",
+  "version": "1.0.10",
+  "description": "Fork from jquery/zepto/dom7. Minimalistic JavaScript library for DOM manipulation",
+  "main": "./dist/dom.cmn.js",
+	"module": "./dist/dom.esm.js",
+  "types": "./dist/dom.d.ts",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production gulp build",
+    "build-dev": "cross-env NODE_ENV=development gulp build",
+    "dev": "cross-env NODE_ENV=development gulp cjs",
+    "dev:umd": "cross-env NODE_ENV=development gulp umd",
+    "dev:esm": "cross-env NODE_ENV=development gulp esm",
+    "release": "bash release.sh"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiajs/dom.git"
+  },
+  "keywords": [
+    "wia",
+    "dom"
+  ],
+  "author": {
+    "name": "Sibyl Yu",
+    "email": "sibyl@wia.pub"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wiajs/dom/issues"
+  },
+  "homepage": "https://www.wia.pub/dom",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@wiajs/base": "^1.0.1",
+    "cross-env": "^7.0.3",
+    "debug": "^4.3.4",
+    "fs-extra": "^11.1.1",
+    "gulp": "^4.0.2",
+    "rollup": "^3.25.1",
+    "terser": "^5.18.0"
+  },
+  "dependencies": {}
+}
